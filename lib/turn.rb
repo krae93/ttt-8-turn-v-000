@@ -13,3 +13,14 @@ def position_taken?(board, index)
      return true
    end
  end
+ ef valid_move?(board, index)
+    index.between?(0,8) && !position_taken?(board, index)
+   #return false
+ #else board[index] == "X" || board[index] == "O"
+ #    return nil
+ #  elsif board[index] != "  "
+ #    return true
+ #elsif position_taken?(board, index) || index > 8
+ #    return false
+ #   end
+ end
