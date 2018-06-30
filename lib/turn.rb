@@ -15,14 +15,6 @@ def position_taken?(board, index)
  end
  def valid_move?(board, index)
     index.between?(0,8) && !position_taken?(board, index)
-   #return false
- #else board[index] == "X" || board[index] == "O"
- #    return nil
- #  elsif board[index] != "  "
- #    return true
- #elsif position_taken?(board, index) || index > 8
- #    return false
- #   end
  end
  def display_board(board)
    puts " #{board[0]} | #{board[1]} | #{board[2]} "
